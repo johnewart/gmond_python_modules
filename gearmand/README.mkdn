@@ -1,0 +1,15 @@
+gearmand
+===============
+
+python module for ganglia 3.1.
+
+This module sends metrics on gearmand.
+
+## AUTHOR
+
+John Ewart <john@johnewart.net>
+
+Based on the memcached plugin by: 
+
+HIROSE Masaaki <hirose31@gmail.com>
+

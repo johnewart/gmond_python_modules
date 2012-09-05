@@ -1,0 +1,37 @@
+modules {
+  module {
+    name     = "__HOSTNAME__"
+    language = "python"
+
+    param host {
+      value = "__HOSTNAME__"
+    }
+    param port {
+      value = 4730
+    }
+
+    param refresh_rate {
+      value = 15
+    }
+
+    param metrix_prefix {
+      value = "__HOSTNAME__"
+    }
+    param spoof_host {
+      value = "__IPADDRESS__:__HOSTNAME__"
+    }
+  }
+}
+
+collection_group {
+  collect_every  = 20
+  time_threshold = 90
+
+  metric {
+    name  = "__QUEUE__enqueued"
+    title = "Current number of items enqueued"
+    value_threshold = 0
+  }
+ 
+
+}
