@@ -136,7 +136,6 @@ class UpdateMetricThread(threading.Thread):
 
 
     def metric_of(self, name):
-        print "metric_of: %s" % (name)
         val = 0
         mp = name.split("_")[0]
         if name.rsplit("_",1)[1] == "rate" and name.rsplit("_",1)[0] in self.metric:
