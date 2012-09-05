@@ -89,7 +89,6 @@ class UpdateMetricThread(threading.Thread):
                         msg += data
 
                 if msg.find("^.$"):
-                    print >>sys.stderr, "Done."
                     break
 
             sock.close()
